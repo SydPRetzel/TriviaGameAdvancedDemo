@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap File -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lilita+One|Margarine" rel="stylesheet">
+
+    <!-- Custom css file -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Overall Bootstrap Grid -->
+    <div class="container-fluid">
+
+        <!-- Jumbotron with Title -->
+        <div class="jumbotron custom-jumbotron">
+            <h1 class="text-center">
+                <strong>Are You Smarter Than a 1st Grader?</strong>
+            </h1>
+            <!-- Time countdown -->
+            <h2 id="timeRemainingDiv" class="text-center">
+                Time Remaining : <span id="timeRemaining">00:00</span>
+            </h2>
+            <!-- Time Up -->
+            <h2 id="timeUpDiv" class="text-center">
+                TIME UP!
+            </h2>
+        </div>
+
+        <!-- Start button -->
+        <div id="startButtonDiv" class="row justify-content-center custom-row">
+            <div class="col-2">
+                <button id="startButton" class="btn btn-primary btn-lg">
+                    Start
+                </button>
+            </div>
+        </div>
+
+        <!-- Questions -->
+        <div id="questionsDiv" class="row justify-content-center custom-row" style="display:none">
+            <div class="col-6">
+                <div id="questionsCard" class="card rounded custom-card">
+                    <h4 id="questionsCardHeader" class="card-header custom-card-header">Questions</h4>
+                    <div id="questionsCardBody" class="card-body custom-card-body">
+                        <div id="questionsCardBodyRow" class="row">
+                            <div id="questionsCardBodyCol" class="col">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Answers -->
+        <div id="answersDiv" class="row justify-content-center custom-row" style="display:none">
+            <div class="col-6">
+                <div id="answersCard" class="card rounded custom-card">
+                    <h4 id="answersCardHeader" class="card-header custom-card-header">Results</h4>
+                    <div id="answersCardBody" class="card-body custom-card-body">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results -->
+        <div id="resultsDiv" class="row justify-content-center custom-row" style="display:none">
+            <div class="col-6">
+                <div id="resultsCard" class="card rounded custom-card">
+                    <h4 id="questionsCardHeader" class="card-header custom-card-header">Results</h4>
+                    <div id="resultsCardBody" class="card-body custom-card-body">
+                        <p>
+                            Number Correct : <span id="numCorrect">0</span>
+                        </p>
+                        <p>
+                            Number Incorrect : <span id="numIncorrect">0</span>
+                        </p>
+                        <p>
+                            Number Not Answered : <span id="numUnanswered">0</span>
+                        </p>
+                        <button id="tryAgainButton" class="btn btn-primary btn-lg">
+                            Try Again
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Javascript -->
+    <script type="text/javascript" src="./assets/javascript/app.js"></script>
+
+</body>
+
+</html>

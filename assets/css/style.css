@@ -1,0 +1,44 @@
+body {
+  /* font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; */
+  font-family: 'Margarine', cursive;
+  font-size: 12px;
+  line-height: 20px;
+  color: #ffffff;
+  background: url("../images/background.png");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.custom-jumbotron {
+  font-family: 'Lilita One', cursive;
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  color: #ffffff;
+}
+
+/* Custom rows */
+.custom-row {
+  margin-bottom: 10px;
+}
+
+/* Custom cols */
+.custom-col {
+  margin-bottom: 10px;
+}
+
+.custom-card {
+  background: #ffffff;
+  border: 5px solid;
+  border-color: #1393ce;
+}
+.custom-card-body {
+  background-image: url("../images/chalkboard.jpg");
+  background-size: cover;
+}
+
+.custom-card-header {
+  background: #93eca9;
+  color: #c90eb9;
+}
