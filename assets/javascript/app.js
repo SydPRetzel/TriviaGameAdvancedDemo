@@ -108,12 +108,13 @@ $(document).ready(function () {
     function showNextQuestion() {
 
         currentIdx++; // Move to next question.
-        hideAll();
 
         // Go to next question if there are more.
         if (currentIdx < QUESTION_ARRAY.length) {
             buildQuestion(currentIdx);
 
+            hideAll();
+            
             // Show the questions.
             $("#questionsDiv").show();
 
@@ -276,10 +277,10 @@ $(document).ready(function () {
     function showAnswer(idx, answerChoice) {
         console.log("showAnswer");
 
-        hideAll();
-
         // Update the answer card.
         buildAnswer(idx, answerChoice);
+
+        hideAll();
 
         // Show the answer.
         $("#answersDiv").show();
@@ -319,10 +320,10 @@ $(document).ready(function () {
     function showResults() {
         console.log("showResults");
 
-        hideAll();
-
         // Update the answer card.
         buildResults();
+
+        hideAll();
 
         // Show the answer.
         $("#resultsDiv").show();
