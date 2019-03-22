@@ -26,6 +26,8 @@ $(document).ready(function () {
     ["40", "20", "13", "50"],
     ["your mom", "the direction", "your house", "your lunch"]];
     var ANSWER_ARRAY = [2, 1, 0, 3, 0, 0, 1, 3, 3, 1];
+    var IMAGE_ARRAY = ["piglet.jpg","snape.jpg","gravity.jpg","crescent.jpg","habitat.jpg","ruler.jpg",
+    "anna.jpg","kai.jpg","states.jpg","compass.jpg"];
     
     // Subset of questions used for testing.
     /*
@@ -204,6 +206,10 @@ $(document).ready(function () {
         console.log("buildAnswer option : " + option);
         // Hide answers.
         $("#answersDiv").hide();
+
+        // Put in new image.
+        var image_src = "./assets/images/" + IMAGE_ARRAY[idx];
+        $("#answerCardImage").attr("src",image_src);
 
         // Empty old answer.
         $("#answersCardBody").empty();

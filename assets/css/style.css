@@ -42,3 +42,9 @@ body {
   background: #93eca9;
   color: #c90eb9;
 }
+
+.custom-card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
