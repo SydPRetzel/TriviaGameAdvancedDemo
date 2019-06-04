@@ -209,8 +209,8 @@ $(document).ready(function () {
         $("#answersDiv").hide();
 
         // Put in new image.
-        var image_src = "./assets/images/" + IMAGE_ARRAY[idx];
-        $("#answerCardImage").attr("src",image_src);
+        // var image_src = "./assets/images/" + IMAGE_ARRAY[idx];
+        // $("#answerCardImage").attr("src",image_src);
 
         // Empty old answer.
         $("#answersCardBody").empty();
